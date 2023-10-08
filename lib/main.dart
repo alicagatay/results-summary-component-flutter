@@ -11,15 +11,30 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: Scaffold(
-        body: Center(
-          child: Text(
-            'Hello World',
-            style: TextStyle(
-              fontSize: 40,
-            ),
-          ),
+        body: LayoutBuilder(
+          builder: (BuildContext context, BoxConstraints constraints) {
+            if (constraints.maxWidth > 375) {
+              return const Center(
+                child: Text(
+                  'This is a computer display',
+                  style: TextStyle(
+                    fontSize: 30.0,
+                  ),
+                ),
+              );
+            } else {
+              return const Center(
+                child: Text(
+                  'This is a mobile display',
+                  style: TextStyle(
+                    fontSize: 30.0,
+                  ),
+                ),
+              );
+            }
+          },
         ),
       ),
     );
