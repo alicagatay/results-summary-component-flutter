@@ -67,6 +67,29 @@ class ComputerScreen extends StatelessWidget {
                     ),
                     width: 140,
                     height: 140,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          '76',
+                          style: TextStyle(
+                            fontSize: 50,
+                            fontWeight: FontWeight.bold,
+                            color:
+                                const HSLColor.fromAHSL(1, 0, 0, 1).toColor(),
+                          ),
+                        ),
+                        Text(
+                          'of 100',
+                          style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                            color: const HSLColor.fromAHSL(1, 224, 0.3, 0.67)
+                                .toColor(),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                   Text(
                     "Great",
