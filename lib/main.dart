@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import 'computer_screen.dart';
+import 'phone_screen.dart';
+
 void main() {
   runApp(
     const MyApp(),
@@ -16,24 +19,7 @@ class MyApp extends StatelessWidget {
         body: LayoutBuilder(
           builder: (BuildContext context, BoxConstraints constraints) {
             if (constraints.maxWidth > 375) {
-              return const Center(
-                child: Text(
-                  'This is a computer display',
-                  style: TextStyle(
-                    fontSize: 30.0,
-                  ),
-                ),
-              );
-            } else {
-              return const Center(
-                child: Text(
-                  'This is a mobile display',
-                  style: TextStyle(
-                    fontSize: 30.0,
-                  ),
-                ),
-              );
-            }
+            } else {}
           },
         ),
       ),
