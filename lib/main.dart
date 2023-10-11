@@ -19,7 +19,10 @@ class MyApp extends StatelessWidget {
         body: LayoutBuilder(
           builder: (BuildContext context, BoxConstraints constraints) {
             if (constraints.maxWidth > 375) {
-            } else {}
+              return const ComputerScreen();
+            } else {
+              return const PhoneScreen();
+            }
           },
         ),
       ),
