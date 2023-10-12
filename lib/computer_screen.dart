@@ -143,41 +143,67 @@ class ComputerScreen extends StatelessWidget {
                   ),
                   Center(
                     child: Container(
+                      decoration: BoxDecoration(
+                        color:
+                            const HSLColor.fromAHSL(0.2, 0, 1, 0.67).toColor(),
+                        borderRadius: const BorderRadius.all(
+                          Radius.circular(5),
+                        ),
+                      ),
                       width: 220,
                       height: 40,
-                      color: const HSLColor.fromAHSL(0.2, 0, 1, 0.67).toColor(),
                     ),
                   ),
                   Center(
                     child: Container(
+                      decoration: BoxDecoration(
+                        color:
+                            const HSLColor.fromAHSL(0.2, 39, 1, 0.56).toColor(),
+                        borderRadius: const BorderRadius.all(
+                          Radius.circular(5),
+                        ),
+                      ),
                       width: 220,
                       height: 40,
-                      color:
-                          const HSLColor.fromAHSL(0.2, 39, 1, 0.56).toColor(),
                     ),
                   ),
                   Center(
                     child: Container(
+                      decoration: BoxDecoration(
+                        color: const HSLColor.fromAHSL(0.2, 166, 1, 0.37)
+                            .toColor(),
+                        borderRadius: const BorderRadius.all(
+                          Radius.circular(5),
+                        ),
+                      ),
                       width: 220,
                       height: 40,
-                      color:
-                          const HSLColor.fromAHSL(0.2, 166, 1, 0.37).toColor(),
                     ),
                   ),
                   Center(
                     child: Container(
+                      decoration: BoxDecoration(
+                        color: const HSLColor.fromAHSL(0.2, 234, 0.85, 0.45)
+                            .toColor(),
+                        borderRadius: const BorderRadius.all(
+                          Radius.circular(5),
+                        ),
+                      ),
                       width: 220,
                       height: 40,
-                      color: const HSLColor.fromAHSL(0.2, 234, 0.85, 0.45)
-                          .toColor(),
                     ),
                   ),
                   Center(
                     child: Container(
+                      decoration: BoxDecoration(
+                        color: const HSLColor.fromAHSL(1, 224, 0.3, 0.27)
+                            .toColor(),
+                        borderRadius: const BorderRadius.all(
+                          Radius.circular(20),
+                        ),
+                      ),
                       width: 220,
-                      height: 40,
-                      color:
-                          const HSLColor.fromAHSL(1, 224, 0.3, 0.27).toColor(),
+                      height: 45,
                     ),
                   ),
                 ],
