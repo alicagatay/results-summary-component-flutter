@@ -100,7 +100,9 @@ class ComputerScreen extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 35),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 35,
+                    ),
                     child: Text(
                       "You scored higher than 65% of "
                       "the people who have taken these tests.",
@@ -123,6 +125,63 @@ class ComputerScreen extends StatelessWidget {
                 ),
               ),
               width: 320,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  const Padding(
+                    padding: EdgeInsets.only(
+                      left: 20,
+                    ),
+                    child: Text(
+                      'Summary',
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                  Center(
+                    child: Container(
+                      width: 220,
+                      height: 40,
+                      color: const HSLColor.fromAHSL(0.2, 0, 1, 0.67).toColor(),
+                    ),
+                  ),
+                  Center(
+                    child: Container(
+                      width: 220,
+                      height: 40,
+                      color:
+                          const HSLColor.fromAHSL(0.2, 39, 1, 0.56).toColor(),
+                    ),
+                  ),
+                  Center(
+                    child: Container(
+                      width: 220,
+                      height: 40,
+                      color:
+                          const HSLColor.fromAHSL(0.2, 166, 1, 0.37).toColor(),
+                    ),
+                  ),
+                  Center(
+                    child: Container(
+                      width: 220,
+                      height: 40,
+                      color: const HSLColor.fromAHSL(0.2, 234, 0.85, 0.45)
+                          .toColor(),
+                    ),
+                  ),
+                  Center(
+                    child: Container(
+                      width: 220,
+                      height: 40,
+                      color:
+                          const HSLColor.fromAHSL(1, 224, 0.3, 0.27).toColor(),
+                    ),
+                  ),
+                ],
+              ),
             ),
           ],
         ),
