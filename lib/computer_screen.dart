@@ -5,6 +5,7 @@ class ComputerScreen extends StatelessWidget {
   const ComputerScreen({super.key});
 
   final String reactionIconPath = '../assets/images/icon-reaction.svg';
+  final String memoryIconPath = '../assets/images/icon-memory.svg';
 
   @override
   Widget build(BuildContext context) {
@@ -208,6 +209,46 @@ class ComputerScreen extends StatelessWidget {
                       ),
                       width: 220,
                       height: 40,
+                      child: Row(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.only(
+                              left: 10,
+                            ),
+                            child: SvgPicture.asset(
+                              memoryIconPath,
+                              width: 15,
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(
+                              left: 10,
+                            ),
+                            child: Text(
+                              'Memory',
+                              style: TextStyle(
+                                color: const HSLColor.fromAHSL(1, 39, 1, 0.56)
+                                    .toColor(),
+                                fontSize: 15,
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(
+                              left: 60,
+                            ),
+                            child: Text(
+                              '92 / 100',
+                              style: TextStyle(
+                                color:
+                                    const HSLColor.fromAHSL(1, 224, 0.3, 0.27)
+                                        .toColor(),
+                                fontSize: 15,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                   Center(
