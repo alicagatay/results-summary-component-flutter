@@ -6,6 +6,8 @@ class ComputerScreen extends StatelessWidget {
 
   final String reactionIconPath = '../assets/images/icon-reaction.svg';
   final String memoryIconPath = '../assets/images/icon-memory.svg';
+  final String verbalIconPath = '../assets/images/icon-verbal.svg';
+  final String visualIconPath = '../assets/images/icon-visual.svg';
 
   @override
   Widget build(BuildContext context) {
@@ -262,6 +264,46 @@ class ComputerScreen extends StatelessWidget {
                       ),
                       width: 220,
                       height: 40,
+                      child: Row(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.only(
+                              left: 10,
+                            ),
+                            child: SvgPicture.asset(
+                              verbalIconPath,
+                              width: 15,
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(
+                              left: 10,
+                            ),
+                            child: Text(
+                              'Verbal',
+                              style: TextStyle(
+                                color: const HSLColor.fromAHSL(1, 166, 1, 0.37)
+                                    .toColor(),
+                                fontSize: 15,
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(
+                              left: 75,
+                            ),
+                            child: Text(
+                              '61 / 100',
+                              style: TextStyle(
+                                color:
+                                    const HSLColor.fromAHSL(1, 224, 0.3, 0.27)
+                                        .toColor(),
+                                fontSize: 15,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                   Center(
