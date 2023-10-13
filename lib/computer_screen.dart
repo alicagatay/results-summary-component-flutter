@@ -317,6 +317,47 @@ class ComputerScreen extends StatelessWidget {
                       ),
                       width: 220,
                       height: 40,
+                      child: Row(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.only(
+                              left: 10,
+                            ),
+                            child: SvgPicture.asset(
+                              visualIconPath,
+                              width: 15,
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(
+                              left: 10,
+                            ),
+                            child: Text(
+                              'Visual',
+                              style: TextStyle(
+                                color:
+                                    const HSLColor.fromAHSL(1, 234, 0.85, 0.45)
+                                        .toColor(),
+                                fontSize: 15,
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(
+                              left: 75,
+                            ),
+                            child: Text(
+                              '72 / 100',
+                              style: TextStyle(
+                                color:
+                                    const HSLColor.fromAHSL(1, 224, 0.3, 0.27)
+                                        .toColor(),
+                                fontSize: 15,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                   Center(
