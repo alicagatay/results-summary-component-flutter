@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 class ComputerScreen extends StatelessWidget {
   const ComputerScreen({super.key});
+
+  final String reactionIconPath = '../assets/images/icon-reaction.svg';
 
   @override
   Widget build(BuildContext context) {
@@ -145,20 +148,60 @@ class ComputerScreen extends StatelessWidget {
                     child: Container(
                       decoration: BoxDecoration(
                         color:
-                            const HSLColor.fromAHSL(0.2, 0, 1, 0.67).toColor(),
+                            const HSLColor.fromAHSL(0.1, 0, 1, 0.67).toColor(),
                         borderRadius: const BorderRadius.all(
                           Radius.circular(5),
                         ),
                       ),
                       width: 220,
                       height: 40,
+                      child: Row(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.only(
+                              left: 10,
+                            ),
+                            child: SvgPicture.asset(
+                              reactionIconPath,
+                              width: 15,
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(
+                              left: 10,
+                            ),
+                            child: Text(
+                              'Reaction',
+                              style: TextStyle(
+                                color: const HSLColor.fromAHSL(1, 0, 1, 0.67)
+                                    .toColor(),
+                                fontSize: 15,
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(
+                              left: 60,
+                            ),
+                            child: Text(
+                              '80 / 100',
+                              style: TextStyle(
+                                color:
+                                    const HSLColor.fromAHSL(1, 224, 0.3, 0.27)
+                                        .toColor(),
+                                fontSize: 15,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                   Center(
                     child: Container(
                       decoration: BoxDecoration(
                         color:
-                            const HSLColor.fromAHSL(0.2, 39, 1, 0.56).toColor(),
+                            const HSLColor.fromAHSL(0.1, 39, 1, 0.56).toColor(),
                         borderRadius: const BorderRadius.all(
                           Radius.circular(5),
                         ),
@@ -170,7 +213,7 @@ class ComputerScreen extends StatelessWidget {
                   Center(
                     child: Container(
                       decoration: BoxDecoration(
-                        color: const HSLColor.fromAHSL(0.2, 166, 1, 0.37)
+                        color: const HSLColor.fromAHSL(0.1, 166, 1, 0.37)
                             .toColor(),
                         borderRadius: const BorderRadius.all(
                           Radius.circular(5),
@@ -183,7 +226,7 @@ class ComputerScreen extends StatelessWidget {
                   Center(
                     child: Container(
                       decoration: BoxDecoration(
-                        color: const HSLColor.fromAHSL(0.2, 234, 0.85, 0.45)
+                        color: const HSLColor.fromAHSL(0.1, 234, 0.85, 0.45)
                             .toColor(),
                         borderRadius: const BorderRadius.all(
                           Radius.circular(5),
