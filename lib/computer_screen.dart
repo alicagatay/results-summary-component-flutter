@@ -371,6 +371,16 @@ class ComputerScreen extends StatelessWidget {
                       ),
                       width: 220,
                       height: 45,
+                      child: Center(
+                        child: Text(
+                          'Continue',
+                          style: TextStyle(
+                            fontSize: 15,
+                            color:
+                                const HSLColor.fromAHSL(1, 0, 0, 1).toColor(),
+                          ),
+                        ),
+                      ),
                     ),
                   ),
                 ],
